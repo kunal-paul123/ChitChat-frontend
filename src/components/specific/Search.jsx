@@ -41,7 +41,7 @@ const search = () => {
   useEffect(() => {
     const timeOutId = setTimeout(() => {
       searchUser(search.value)
-        .then(({ data }) => setUsers(data.users))
+        .then(({ data }) => setUsers(data?.users))
         .catch((err) => console.log(err));
     }, 1000);
 
