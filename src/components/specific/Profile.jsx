@@ -5,6 +5,8 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import moment from "moment";
 
 const Profile = ({ user }) => {
+  if (!user) return <Typography color="#fff">Loading profile...</Typography>;
+
   return (
     <Stack spacing={"2rem"} direction={"column"} alignItems={"center"}>
       <Avatar
