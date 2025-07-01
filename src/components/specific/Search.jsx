@@ -72,7 +72,7 @@ const search = () => {
         />
 
         <List>
-          {users.map((i) => {
+          {users?.map((i) => {
             return (
               <UserItem
                 user={i}
